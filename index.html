@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Electronics Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">TECH STORE</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Cameras</a></li>
+                <li><a href="#">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>New Arrivals</h1>
+        <p>Best Tech Deals of 2025</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section class="products-container">
+        <h2>Best Sellers</h2>
+        <div class="grid">
+            <div class="product-card">
+                <div class="image-placeholder" href="image.png"></div>
+                <h3>Smartphone X</h3>
+                <p>$999.00</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="image-placeholder"></div>
+                <h3>Pro Laptop</h3>
+                <p>$1200.00</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="image-placeholder"></div>
+                <h3>Wireless Earbuds</h3>
+                <p>$150.00</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

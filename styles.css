@@ -1,0 +1,206 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1. Header Styling (Flexbox) */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex; /* Makes items sit side-by-side */
+    justify-content: space-between; /* Pushes Logo left, Menu right */
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 2. Hero Section (Banner) */
+.hero {
+    background-color: #f4f4f4; /* Light grey background */
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* 3. Product Grid (CSS Grid) */
+.products-container {
+    padding: 40px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    /* This creates the responsive columns automatically */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 450px;
+    background-color: #eee; /* Placeholder for real image */
+    margin-bottom: 15px;
+}
+
+.product-image {
+    max-width: 100%; /* Ensures image doesn't overflow its container */
+    height: auto;    /* Maintains aspect ratio */
+    display: block;  /* Removes extra space below image */
+    margin: 0 auto 15px auto; /* Centers the image and adds space below */
+    max-height: 200px; /* Optional: Keep a consistent max height like the placeholder had */
+    object-fit: contain; /* Optional: Ensures the whole image fits without cropping */
+}
+
+/* General Reset */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Cleaner, modern font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Ensure a clean white background */
+}
+
+/* Base Button Styling (Apply to all buttons) */
+button {
+    padding: 12px 25px;
+    background-color: #000000; /* Black for high contrast */
+    color: #00FFFF; /* **Bright accent color for contrast (Cyber Teal)** */
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #1a1a1a;
+}
+
+/* 1. Header Styling (Sleek and Dark) */
+header {
+    background-color: #1c1c1c; /* Very dark grey/black */
+    color: white;
+    padding: 1rem 30px; /* More padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900; /* Extra bold for branding */
+    color: #00FFFF; /* Use the accent color here too */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Increased spacing */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #00FFFF; /* Highlight link on hover */
+}
+
+/* 2. Hero Section (High Impact) */
+.hero {
+    /* Replace this background color with an actual image URL later */
+    background-color: #333333; 
+    color: white;
+    text-align: center;
+    padding: 150px 20px; /* Increased padding for impact */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* 3. Product Grid (Clean E-commerce Look) */
+.products-container {
+    padding: 60px 30px; /* More space around the grid */
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    /* Keeps the responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 40px; /* More space between products */
+    margin-top: 30px;
+}
+
+.product-card {
+    border: 1px solid #eeeeee; /* Very light border */
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    transition: box-shadow 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Lifts the card on hover */
+}
+
+/* Image Styling from previous step */
+.product-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.product-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin: 10px 0 5px 0;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #c0392b; /* A contrasting price color (like red/orange for sales) */
+    margin-bottom: 15px;
+}
